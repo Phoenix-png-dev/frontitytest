@@ -51,7 +51,7 @@ const Theme = ({ state }) => {
       </Main>
       <Sidebar>
         <div>
-          <p class="subtitle fancy">
+          <p className="subtitle fancy">
             <span>Categories</span>
           </p>
           <Categories />
@@ -87,11 +87,7 @@ const Main = styled.div`
   display: inline-flex;
   justify-content: center;
   width: 75%;
-  background-image: linear-gradient(
-    180deg,
-    rgba(66, 174, 228, 0.1),
-    rgba(66, 174, 228, 0)
-  );
+  
   
   @media only screen and (max-width: 1090px) {
       width: 100%;
@@ -119,6 +115,9 @@ const Sidebar = styled.div`
   .fancy {
   line-height: 0.5;
   text-align: center;
+  font-size: 20px;
+  color: #50677e;
+  font-weight: 500;
 }
 .fancy span {
   display: inline-block;
@@ -128,19 +127,21 @@ const Sidebar = styled.div`
 .fancy span:after {
   content: "";
   position: absolute;
-  height: 5px;
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
+  height: 0;
+  border-bottom: 2px solid #50677e;
+  border-top: 2px solid #3936ba;
   top: 0;
   width: 50px;
 }
 .fancy span:before {
   right: 100%;
   margin-right: 15px;
+  margin-top: 3px;
 }
 .fancy span:after {
   left: 100%;
   margin-left: 15px;
+  margin-top: 3px;
 }
   
   @media only screen and (max-width: 1090px) {

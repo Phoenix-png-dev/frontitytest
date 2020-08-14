@@ -79,12 +79,13 @@ const Content = styled.div`
   flex-direction: column;
   justify-content: space-around;
   img {
-    width: 27rem;
+    width: 35%;
     float: left;
     padding-right: 10%;
+    margin-bottom: -40px;
   }
   h2 {
-    color: black;
-    font-size: 3.5rem;
+    color: #102a42;
+    font-size: 4.2rem;
   }
 `;

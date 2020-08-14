@@ -34,7 +34,7 @@ const Nav = ({ state }) => (
     <Icons>
       <FaFacebookSquare color="#4267b2" />
       <FaTwitterSquare color="blue" />
-      <FaInstagramSquare color="#e88cbf" />
+      <FaInstagramSquare color="#ea4d89" />
     </Icons>
   </NavContainer>
 );
@@ -74,7 +74,7 @@ const NavItem = styled.div`
   margin: 0 16px;
   color: #3d4f7a;
   font-size: 1.4em;
-  font-weight: bold;
+  
   box-sizing: border-box;
   flex-shrink: 0;
 
