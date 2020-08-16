@@ -1,7 +1,6 @@
 import React from "react";
 import { connect, styled } from "frontity";
 import Link from "../link";
-import FeaturedMedia from "../featured-media";
 import ListImage from "./list-image";
 
 /**
@@ -18,9 +17,7 @@ const Item = ({ state, item }) => {
 
   return (
     <Features>
-    <article>
-      
-
+      <article>
       
     <Image>
       {/*
@@ -30,7 +27,7 @@ const Item = ({ state, item }) => {
       {state.theme.featured.showOnList && (
         <ListImage id={item.featured_media} />
       )}
-        </Image>
+    </Image>
 
       <div>
         <Link link={item.link}>
@@ -58,7 +55,9 @@ const Item = ({ state, item }) => {
             
       </Information>
       </div>
-    </article>
+
+        
+        </article>
       </Features>
   );
 };
@@ -66,42 +65,32 @@ const Item = ({ state, item }) => {
 // Connect the Item to gain access to `state` as a prop
 export default connect(Item);
 
+
+
 const Features = styled.div`
   width: 100%;
   height: auto;
+  border: 1px solid red;
 `;
 
 const Image = styled.div`
   width: 45%;
 `
 
-const Title = styled.h1`
-  font-size: 2rem;
-  color: rgba(12, 17, 43);
-  padding-bottom: 8px;
-  box-sizing: border-box;
-  float: right;
-  display: flex;
-`;
-
-const Information = styled.div`
-  width: 100%;
-  float: right;
-  display: inline-block
-`
-
-const AuthorName = styled.span`
-  color: rgba(12, 17, 43, 0.9);
-  font-size: 0.9em;
-  float: right;
-  display: flex;
-`;
-
 const StyledLink = styled(Link)`
   padding: 15px 0;
 `;
 
 
+const Title = styled.h1`
+  font-size: 2rem;
+  color: rgba(12, 17, 43);
+  padding-bottom: 8px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  float: right;
+  display: flex;
+`;
 
 const Excerpt = styled.div`
   line-height: 1.6em;
@@ -109,7 +98,26 @@ const Excerpt = styled.div`
   float: right;
   display: inline-block;
   width: 300px;
+  margin: 0 auto;
 `;
+
+const Information = styled.div`
+  width: 100%;
+  float: right;
+  display: inline-block;
+  margin-top: -50px;
+`
+
+const AuthorName = styled.span`
+  color: rgba(12, 17, 43, 0.9);
+  font-size: 0.9em;
+  float: right;
+  display: flex;
+  margin: 0 10px;
+`;
+
+
+
 
 const PublishDate = styled.span`
   color: rgba(12, 17, 43, 0.9);
