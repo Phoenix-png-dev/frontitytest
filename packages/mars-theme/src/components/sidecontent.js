@@ -1,0 +1,82 @@
+import React from "react";
+import { connect, styled } from "frontity";
+import Link from "./link";
+import Categories from "./categories";
+import {
+  FaFacebookSquare,
+  FaTwitterSquare,
+  FaInstagramSquare,
+} from "react-icons/fa";
+
+const SideContent = () => {
+  return (
+    <Side>
+    <div>
+      <p className="subtitle fancy">
+        <span>Categories</span>
+      </p>
+      <Categories />
+    </div>
+      </Side>
+  );
+};
+
+export default connect(SideContent);
+
+const Side = styled.div`
+  display: inline-flex;
+  float: right;
+  width: 25%;
+  background-image: linear-gradient(
+    180deg,
+    rgba(66, 174, 228, 0.1),
+    rgba(66, 174, 228, 0)
+  );
+  div {
+    margin: 0 auto;
+    align-items: center;
+  }
+  h3 {
+    color: green;
+    text-align: center;
+  }
+  .fancy {
+  line-height: 0.5;
+  text-align: center;
+  font-size: 20px;
+  color: #50677e;
+  font-weight: 500;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;  
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 0;
+  border-bottom: 2px solid #50677e;
+  border-top: 2px solid #3936ba;
+  top: 0;
+  width: 50px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+  margin-top: 3px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+  margin-top: 3px;
+}
+  
+  @media only screen and (max-width: 1090px) {
+      width: 100%;
+      display: inline-flex;
+      justify-content: center;
+      float: none;
+    }
+  }
+`;
