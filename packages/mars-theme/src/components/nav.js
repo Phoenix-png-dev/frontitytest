@@ -32,9 +32,9 @@ const Nav = ({ state }) => (
       );
     })}
     <Icons>
-      <FaFacebookSquare color="#4267b2" />
-      <FaTwitterSquare color="blue" />
-      <FaInstagramSquare color="#ea4d89" />
+      <a href="https://www.facebook.com/mentalgeek/"><FaFacebookSquare color="#4267b2" /></a>
+      <a href="https://twitter.com/thementalgeek"><FaTwitterSquare color="#34a1f2" /></a>
+      <a href="https://www.instagram.com/mental_geek/"><FaInstagramSquare color="#ea4d89" /></a>
     </Icons>
   </NavContainer>
 );

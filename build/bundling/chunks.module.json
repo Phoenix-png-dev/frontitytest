@@ -2,20 +2,20 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.1",
-  "hash": "587dadeab89690973875",
+  "hash": "ee7016b3f65b32fa3425",
   "publicPath": "/static/",
   "outputPath": "/Users/matthewbert/Desktop/my-app/build/static",
   "assetsByChunkName": {
-    "list": "list.module.js",
-    "my-app": [
-      "my-app.module.js",
-      "my-app.2731ef15d32264f93e1a.hot-update.js"
-    ]
+    "list": [
+      "list.module.js",
+      "list.befbc2583f7fd2b84ef5.hot-update.js"
+    ],
+    "my-app": "my-app.module.js"
   },
   "assets": [
     {
-      "name": "2731ef15d32264f93e1a.hot-update.json",
-      "size": 48,
+      "name": "befbc2583f7fd2b84ef5.hot-update.json",
+      "size": 46,
       "chunks": [],
       "chunkNames": [],
       "info": {
@@ -33,8 +33,23 @@
       "emitted": false
     },
     {
+      "name": "list.befbc2583f7fd2b84ef5.hot-update.js",
+      "size": 44406,
+      "chunks": [
+        "list"
+      ],
+      "chunkNames": [
+        "list"
+      ],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
       "name": "list.module.js",
-      "size": 47617,
+      "size": 76400,
       "chunks": [
         "list"
       ],
@@ -45,23 +60,8 @@
       "emitted": false
     },
     {
-      "name": "my-app.2731ef15d32264f93e1a.hot-update.js",
-      "size": 9035,
-      "chunks": [
-        "my-app"
-      ],
-      "chunkNames": [
-        "my-app"
-      ],
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true
-      },
-      "emitted": false
-    },
-    {
       "name": "my-app.module.js",
-      "size": 9342467,
+      "size": 9345593,
       "chunks": [
         "my-app"
       ],
@@ -79,8 +79,7 @@
         "my-app"
       ],
       "assets": [
-        "my-app.module.js",
-        "my-app.2731ef15d32264f93e1a.hot-update.js"
+        "my-app.module.js"
       ],
       "children": {},
       "childAssets": {}
@@ -92,8 +91,7 @@
         "my-app"
       ],
       "assets": [
-        "my-app.module.js",
-        "my-app.2731ef15d32264f93e1a.hot-update.js"
+        "my-app.module.js"
       ],
       "children": {},
       "childAssets": {}
@@ -103,7 +101,8 @@
         "list"
       ],
       "assets": [
-        "list.module.js"
+        "list.module.js",
+        "list.befbc2583f7fd2b84ef5.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
