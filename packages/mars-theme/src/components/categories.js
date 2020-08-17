@@ -31,7 +31,7 @@ const NavContainer = styled.nav`
   width: 50%;
   max-width: 50%;
   box-sizing: border-box;
-  padding: 0 150px;
+  
   margin: 0;
   align-items: center;
 `;

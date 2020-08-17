@@ -38,10 +38,19 @@ const List = ({ state }) => {
 export default connect(List);
 
 const Container = styled.section`
-  width: 800px;
+  width: 85%;
   margin: 0;
   padding: 24px;
   list-style: none;
+
+  @media screen and (max-width: 800px) {
+    & {
+      width: 80%;
+      display: block;
+      margin-bottom: 20px;
+      padding: 0;
+    }
+  }
 `;
 
 const Header = styled.h3`

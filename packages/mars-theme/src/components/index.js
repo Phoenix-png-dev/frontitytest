@@ -83,7 +83,7 @@ const HeadContainer = styled.div`
 const Main = styled.div`
   display: inline-flex;
   justify-content: center;
-  width: 70%;
+  width: 80%;
   
   
   @media only screen and (max-width: 1090px) {

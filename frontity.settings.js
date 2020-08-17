@@ -13,11 +13,10 @@ const settings = {
       state: {
         theme: {
           menu: [
-            ["Home", "/"],
             ["About", "/about/"],
-            ["Blog", "/blog/"],
             ["Resources", "/resources/"],
-            ["Connect", "/connect/"]
+            ["Connect", "/connect/"],
+            ["Home", "/"]
           ],
           category: [
             ["General", "/category/general/"],

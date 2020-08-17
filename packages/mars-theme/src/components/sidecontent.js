@@ -7,17 +7,12 @@ import {
   FaTwitterSquare,
   FaInstagramSquare,
 } from "react-icons/fa";
-import InstaDisplay from "./instagram";
  
 
 const SideContent = () => {
   return (
     <Side>
       <div>
-        <p className="subtitle fancy">
-          <span>Instagram</span>
-        </p>
-        <InstaDisplay />
         <p className="subtitle fancy">
           <span>Categories</span>
         </p>
@@ -32,7 +27,7 @@ export default connect(SideContent);
 const Side = styled.div`
   display: inline-flex;
   float: right;
-  width: 25%;
+  width: 20%;
   baackground-color: white;
   div {
     margin: 0 auto;

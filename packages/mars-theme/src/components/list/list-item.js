@@ -1,7 +1,7 @@
 import React from "react";
 import { connect, styled } from "frontity";
 import Link from "../link";
-import FeaturedMedia from "../featured-media";
+import ListImage from "../list-image";
 
 /**
  * Item Component
@@ -17,11 +17,21 @@ const Item = ({ state, item }) => {
 
   return (
     <StyledArticle>
-      <Link link={item.link}>
-        <Title dangerouslySetInnerHTML={{ __html: item.title.rendered }} />
-      </Link>
+      {/*
+       * If the want to show featured media in the
+       * list of featured posts, we render the media.
+       */}
+      <ColumnOne>
+        {state.theme.featured.showOnList && (
+          <ListImage id={item.featured_media} />
+        )}
+      </ColumnOne>
 
-      <div>
+      <ColumnTwo>
+        <Link link={item.link}>
+          <Title dangerouslySetInnerHTML={{ __html: item.title.rendered }} />
+        </Link>
+
         {/* If the post has an author, we render a clickable author text. */}
         {author && (
           <StyledLink link={author.link}>
@@ -34,20 +44,14 @@ const Item = ({ state, item }) => {
           {" "}
           on <b>{date.toDateString()}</b>
         </PublishDate>
-      </div>
 
-      {/*
-       * If the want to show featured media in the
-       * list of featured posts, we render the media.
-       */}
-      {state.theme.featured.showOnList && (
-        <FeaturedMedia id={item.featured_media} />
-      )}
-
-      {/* If the post has an excerpt (short summary text), we render it */}
-      {item.excerpt && (
-        <Excerpt dangerouslySetInnerHTML={{ __html: item.excerpt.rendered }} />
-      )}
+        {/* If the post has an excerpt (short summary text), we render it */}
+        {item.excerpt && (
+          <Excerpt
+            dangerouslySetInnerHTML={{ __html: item.excerpt.rendered }}
+          />
+        )}
+      </ColumnTwo>
     </StyledArticle>
   );
 };
@@ -55,20 +59,62 @@ const Item = ({ state, item }) => {
 // Connect the Item to gain access to `state` as a prop
 export default connect(Item);
 
-const Title = styled.h1`
-  font-size: 2rem;
-  color: rgba(12, 17, 43);
-  margin: 0;
-  padding-top: 24px;
-  padding-bottom: 8px;
-  box-sizing: border-box;
-`;
-
 const StyledArticle = styled.article`
   padding: 12px;
   border: 2px solid;
+  border-radius: 25px;
   margin-bottom: 10px;
+  height: 280px;
+
+  @media screen and (max-width: 800px) {
+    & {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+      height: 600px
+    }
+  }
 `;
+
+const ColumnOne = styled.div`
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+
+  @media screen and (max-width: 800px) {
+    & {
+      width: 100%;
+      display: block;
+      padding: 0 0;
+    }
+  }
+`;
+
+
+const ColumnTwo = styled.div`
+  float: right;
+  width: 40%;
+  height: auto;
+  padding: 0 10px;
+
+  @media screen and (max-width: 800px) {
+    & {
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+      padding: 0;
+    }
+  }
+`;
+
+
+const Title = styled.h1`
+  font-size: 2rem;
+  color: rgba(12, 17, 43);
+ 
+`;
+
+
 
 const AuthorName = styled.span`
   color: rgba(12, 17, 43, 0.9);
