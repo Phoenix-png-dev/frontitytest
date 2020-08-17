@@ -28,15 +28,12 @@ export default connect(Categories);
 
 const NavContainer = styled.nav`
   list-style: none;
-  
-  width: 100%;
-  max-width: 100%;
+  width: 50%;
+  max-width: 50%;
   box-sizing: border-box;
-  padding: 0 24px;
+  padding: 0 150px;
   margin: 0;
-  
-
-  
+  align-items: center;
 `;
 
 const NavItem = styled.div`

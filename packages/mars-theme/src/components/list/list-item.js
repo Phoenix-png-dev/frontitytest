@@ -16,7 +16,7 @@ const Item = ({ state, item }) => {
   const date = new Date(item.date);
 
   return (
-    <article>
+    <StyledArticle>
       <Link link={item.link}>
         <Title dangerouslySetInnerHTML={{ __html: item.title.rendered }} />
       </Link>
@@ -48,7 +48,7 @@ const Item = ({ state, item }) => {
       {item.excerpt && (
         <Excerpt dangerouslySetInnerHTML={{ __html: item.excerpt.rendered }} />
       )}
-    </article>
+    </StyledArticle>
   );
 };
 
@@ -62,6 +62,12 @@ const Title = styled.h1`
   padding-top: 24px;
   padding-bottom: 8px;
   box-sizing: border-box;
+`;
+
+const StyledArticle = styled.article`
+  padding: 12px;
+  border: 2px solid;
+  margin-bottom: 10px;
 `;
 
 const AuthorName = styled.span`

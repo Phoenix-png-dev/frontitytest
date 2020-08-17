@@ -14,6 +14,7 @@ const settings = {
         theme: {
           menu: [
             ["Home", "/"],
+            ["About", "/about/"],
             ["Blog", "/blog/"],
             ["Resources", "/resources/"],
             ["Connect", "/connect/"]
@@ -35,13 +36,13 @@ const settings = {
         source: {
           api:
             "https://mentalgeek-60854f.ingress-comporellon.easywp.com/wp-json",
-          homepage: "/home/",
-          postsPage: "/blog/"
+          homepage: "/",
+          postsPage: "/"
         }
       }
     },
     "@frontity/tiny-router",
-    "@frontity/html2react",
+    "@frontity/html2react"
   ]
 };
 

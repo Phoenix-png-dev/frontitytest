@@ -7,17 +7,23 @@ import {
   FaTwitterSquare,
   FaInstagramSquare,
 } from "react-icons/fa";
+import InstaDisplay from "./instagram";
+ 
 
 const SideContent = () => {
   return (
     <Side>
-    <div>
-      <p className="subtitle fancy">
-        <span>Categories</span>
-      </p>
-      <Categories />
-    </div>
-      </Side>
+      <div>
+        <p className="subtitle fancy">
+          <span>Instagram</span>
+        </p>
+        <InstaDisplay />
+        <p className="subtitle fancy">
+          <span>Categories</span>
+        </p>
+        <Categories />
+      </div>
+    </Side>
   );
 };
 
@@ -27,11 +33,7 @@ const Side = styled.div`
   display: inline-flex;
   float: right;
   width: 25%;
-  background-image: linear-gradient(
-    180deg,
-    rgba(66, 174, 228, 0.1),
-    rgba(66, 174, 228, 0)
-  );
+  baackground-color: white;
   div {
     margin: 0 auto;
     align-items: center;
@@ -40,6 +42,7 @@ const Side = styled.div`
     color: green;
     text-align: center;
   }
+  
   .fancy {
   line-height: 0.5;
   text-align: center;
@@ -80,3 +83,4 @@ const Side = styled.div`
     }
   }
 `;
+

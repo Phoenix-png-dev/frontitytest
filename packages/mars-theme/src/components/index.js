@@ -50,9 +50,7 @@ const Theme = ({ state }) => {
           <PageError when={data.isError} />
         </Switch>
       </Main>
-      
-          <SideContent />
-        
+      <SideContent />
       <FootArea>
         <Footer />
       </FootArea>
@@ -85,7 +83,7 @@ const HeadContainer = styled.div`
 const Main = styled.div`
   display: inline-flex;
   justify-content: center;
-  width: 75%;
+  width: 70%;
   
   
   @media only screen and (max-width: 1090px) {
