@@ -79,7 +79,7 @@ const Title = styled.h1`
   margin-top: 24px;
   margin-bottom: 8px;
   color: rgba(12, 17, 43);
-  display: none;
+  
 `;
 
 const StyledLink = styled(Link)`

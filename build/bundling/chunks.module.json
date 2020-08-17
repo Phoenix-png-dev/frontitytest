@@ -2,20 +2,20 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.1",
-  "hash": "3cd052b1d1e234107706",
+  "hash": "61a4a51cd3ee1e46efd1",
   "publicPath": "/static/",
   "outputPath": "/Users/matthewbert/Desktop/my-app/build/static",
   "assetsByChunkName": {
-    "list": [
-      "list.module.js",
-      "list.adf39a416d15274f8f5e.hot-update.js"
-    ],
-    "my-app": "my-app.module.js"
+    "list": "list.module.js",
+    "my-app": [
+      "my-app.module.js",
+      "my-app.5f50238b7e7f9f05141e.hot-update.js"
+    ]
   },
   "assets": [
     {
-      "name": "adf39a416d15274f8f5e.hot-update.json",
-      "size": 46,
+      "name": "5f50238b7e7f9f05141e.hot-update.json",
+      "size": 48,
       "chunks": [],
       "chunkNames": [],
       "info": {
@@ -30,16 +30,28 @@
       "chunks": [],
       "chunkNames": [],
       "info": {},
-      "emitted": false
+      "emitted": true
     },
     {
-      "name": "list.adf39a416d15274f8f5e.hot-update.js",
-      "size": 45137,
+      "name": "list.module.js",
+      "size": 47617,
       "chunks": [
         "list"
       ],
       "chunkNames": [
         "list"
+      ],
+      "info": {},
+      "emitted": true
+    },
+    {
+      "name": "my-app.5f50238b7e7f9f05141e.hot-update.js",
+      "size": 59954,
+      "chunks": [
+        "my-app"
+      ],
+      "chunkNames": [
+        "my-app"
       ],
       "info": {
         "hotModuleReplacement": true,
@@ -48,20 +60,8 @@
       "emitted": false
     },
     {
-      "name": "list.module.js",
-      "size": 77131,
-      "chunks": [
-        "list"
-      ],
-      "chunkNames": [
-        "list"
-      ],
-      "info": {},
-      "emitted": false
-    },
-    {
       "name": "my-app.module.js",
-      "size": 9345593,
+      "size": 9345467,
       "chunks": [
         "my-app"
       ],
@@ -79,7 +79,8 @@
         "my-app"
       ],
       "assets": [
-        "my-app.module.js"
+        "my-app.module.js",
+        "my-app.5f50238b7e7f9f05141e.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -91,7 +92,8 @@
         "my-app"
       ],
       "assets": [
-        "my-app.module.js"
+        "my-app.module.js",
+        "my-app.5f50238b7e7f9f05141e.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -101,8 +103,7 @@
         "list"
       ],
       "assets": [
-        "list.module.js",
-        "list.adf39a416d15274f8f5e.hot-update.js"
+        "list.module.js"
       ],
       "children": {},
       "childAssets": {}

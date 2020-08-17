@@ -1,7 +1,7 @@
 import React from "react";
 import { connect, styled } from "frontity";
 import Link from "../link";
-import ListImage from "./list-image";
+import FeaturedMedia from "../featured-media";
 
 /**
  * Item Component
@@ -16,30 +16,12 @@ const Item = ({ state, item }) => {
   const date = new Date(item.date);
 
   return (
-    <Features>
-      <article>
-      
-    <Image>
-      {/*
-       * If the want to show featured media in the
-       * list of featured posts, we render the media.
-       */}
-      {state.theme.featured.showOnList && (
-        <ListImage id={item.featured_media} />
-      )}
-    </Image>
+    <article>
+      <Link link={item.link}>
+        <Title dangerouslySetInnerHTML={{ __html: item.title.rendered }} />
+      </Link>
 
       <div>
-        <Link link={item.link}>
-          <Title dangerouslySetInnerHTML={{ __html: item.title.rendered }} />
-        </Link>
-
-      {/* If the post has an excerpt (short summary text), we render it */}
-      {item.excerpt && (
-        <Excerpt dangerouslySetInnerHTML={{ __html: item.excerpt.rendered }} />
-      )}
-
-      <Information>
         {/* If the post has an author, we render a clickable author text. */}
         {author && (
           <StyledLink link={author.link}>
@@ -52,78 +34,51 @@ const Item = ({ state, item }) => {
           {" "}
           on <b>{date.toDateString()}</b>
         </PublishDate>
-            
-      </Information>
       </div>
 
-        
-        </article>
-      </Features>
+      {/*
+       * If the want to show featured media in the
+       * list of featured posts, we render the media.
+       */}
+      {state.theme.featured.showOnList && (
+        <FeaturedMedia id={item.featured_media} />
+      )}
+
+      {/* If the post has an excerpt (short summary text), we render it */}
+      {item.excerpt && (
+        <Excerpt dangerouslySetInnerHTML={{ __html: item.excerpt.rendered }} />
+      )}
+    </article>
   );
 };
 
 // Connect the Item to gain access to `state` as a prop
 export default connect(Item);
 
-
-
-const Features = styled.div`
-  width: 100%;
-  height: auto;
-  border: 1px solid red;
+const Title = styled.h1`
+  font-size: 2rem;
+  color: rgba(12, 17, 43);
+  margin: 0;
+  padding-top: 24px;
+  padding-bottom: 8px;
+  box-sizing: border-box;
 `;
 
-const Image = styled.div`
-  width: 45%;
-`
+const AuthorName = styled.span`
+  color: rgba(12, 17, 43, 0.9);
+  font-size: 0.9em;
+`;
 
 const StyledLink = styled(Link)`
   padding: 15px 0;
 `;
 
-
-const Title = styled.h1`
-  font-size: 2rem;
-  color: rgba(12, 17, 43);
-  padding-bottom: 8px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  float: right;
-  display: flex;
+const PublishDate = styled.span`
+  color: rgba(12, 17, 43, 0.9);
+  font-size: 0.9em;
 `;
 
 const Excerpt = styled.div`
   line-height: 1.6em;
   color: rgba(12, 17, 43, 0.8);
-  float: right;
-  display: inline-block;
-  width: 300px;
-  margin: 0 auto;
 `;
-
-const Information = styled.div`
-  width: 100%;
-  float: right;
-  display: inline-block;
-  margin-top: -50px;
-`
-
-const AuthorName = styled.span`
-  color: rgba(12, 17, 43, 0.9);
-  font-size: 0.9em;
-  float: right;
-  display: flex;
-  margin: 0 10px;
-`;
-
-
-
-
-const PublishDate = styled.span`
-  color: rgba(12, 17, 43, 0.9);
-  font-size: 0.9em;
-  float: right;
-  display: flex;
-
-`;
-
