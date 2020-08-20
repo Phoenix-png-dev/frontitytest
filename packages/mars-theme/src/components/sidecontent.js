@@ -14,6 +14,20 @@ const SideContent = () => {
     <Side>
       <div>
         <p className="subtitle fancy">
+          <span>Follow Us</span>
+        </p>
+        <Icons>
+          <a href="https://www.facebook.com/mentalgeek/">
+            <FaFacebookSquare color="#4267b2" />
+          </a>
+          <a href="https://twitter.com/thementalgeek">
+            <FaTwitterSquare color="#34a1f2" />
+          </a>
+          <a href="https://www.instagram.com/mental_geek/">
+            <FaInstagramSquare color="#ea4d89" />
+          </a>
+        </Icons>
+        <p className="subtitle fancy">
           <span>Categories</span>
         </p>
         <Categories />
@@ -79,3 +93,11 @@ const Side = styled.div`
   }
 `;
 
+const Icons = styled.nav`
+  display: flex;
+  font-size: 25px;
+
+  svg {
+    padding-right: 10px;
+  }
+`;

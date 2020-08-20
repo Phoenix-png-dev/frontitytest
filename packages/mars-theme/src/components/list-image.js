@@ -41,8 +41,7 @@ const Container = styled.div`
 const StyledImage = styled(Image)`
   display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
 
   @media screen and (max-width: 800px) {
     & {

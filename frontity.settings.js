@@ -7,6 +7,7 @@ const settings = {
       description: "A Mental Health Community"
     }
   },
+
   packages: [
     {
       name: "@frontity/mars-theme",
@@ -16,6 +17,7 @@ const settings = {
             ["About", "/about/"],
             ["Resources", "/resources/"],
             ["Connect", "/connect/"],
+            //["Portfolio", "/portfolio/"],
             ["Home", "/"]
           ],
           category: [

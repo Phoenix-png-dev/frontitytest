@@ -9,6 +9,7 @@ import Title from "./title";
 import PageError from "./page-error";
 import SideContent from "./sidecontent"
 import Footer from "./footer";
+import Portfolio from "./portfolio"
 import { FaBeer } from "react-icons/fa";
 
 
@@ -46,11 +47,14 @@ const Theme = ({ state }) => {
         <Switch>
           <Loading when={data.isFetching} />
           <List when={data.isArchive} />
+          {/*<Portfolio when={data.isPostType && state.router.link == '/portfolio/'} />*/}
           <Post when={data.isPostType} />
           <PageError when={data.isError} />
         </Switch>
       </Main>
-      <SideContent />
+      <SideBar>
+        <SideContent />
+      </SideBar>
       <FootArea>
         <Footer />
       </FootArea>
@@ -81,16 +85,29 @@ const HeadContainer = styled.div`
 `;
 
 const Main = styled.div`
-  display: inline-flex;
+  display: inline-block;
   justify-content: center;
-  width: 80%;
-  
-  
+  float: left;
+  width: 75%;
   @media only screen and (max-width: 1090px) {
-      width: 100%;
+      & {
+        width: 100%;
     }
   }
 `;
+
+const SideBar = styled.div`
+  display: inline-block;
+  justify-content: center;
+  
+  @media only screen and (max-width: 1090px) {
+      & {
+        width: 100%;
+    }
+  }
+`;
+
+
 
 const FootArea = styled.div`
   height: 8rem;
@@ -99,7 +116,6 @@ const FootArea = styled.div`
   display: grid;
   place-items: center;
   justify-content: center;
-  position: absolute;
   width: 100%;
 `
 

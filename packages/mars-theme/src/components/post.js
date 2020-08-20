@@ -5,6 +5,7 @@ import List from "./list";
 import FeaturedMedia from "./featured-media";
 
 
+
 const Post = ({ state, actions, libraries }) => {
   // Get information about the current URL.
   const data = state.source.get(state.router.link);
@@ -60,7 +61,7 @@ const Post = ({ state, actions, libraries }) => {
       {/* Render the content using the Html2React component so the HTML is processed
        by the processors we included in the libraries.html2react.processors array. */}
       <Content>
-          <Html2React html={post.content.rendered} />
+        <Html2React html={post.content.rendered} />
       </Content>
     </Container>
   ) : null;
@@ -69,9 +70,10 @@ const Post = ({ state, actions, libraries }) => {
 export default connect(Post);
 
 const Container = styled.div`
-  width: 90%;
-  margin: 0;
-  padding: 24px;
+  width: 80%;
+  margin: 0 auto;
+  padding-left: 24px;
+  
 `;
 
 const Title = styled.h1`

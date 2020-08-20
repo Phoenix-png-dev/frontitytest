@@ -63,7 +63,7 @@ const StyledArticle = styled.article`
   padding: 12px;
   border: 2px solid;
   border-radius: 25px;
-  margin-bottom: 10px;
+  margin: 0 auto;
   height: 280px;
 
   @media screen and (max-width: 800px) {
