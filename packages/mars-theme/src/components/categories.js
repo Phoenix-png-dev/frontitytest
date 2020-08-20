@@ -40,7 +40,7 @@ const NavItem = styled.div`
   padding: 0;
   margin: 0 auto;
   color: black;
-  font-size: 0.9em;
+  font-size: 1.5em;
   box-sizing: border-box;
   flex-shrink: 0;
 

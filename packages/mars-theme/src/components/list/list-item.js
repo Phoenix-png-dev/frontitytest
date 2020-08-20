@@ -32,6 +32,15 @@ const Item = ({ state, item }) => {
           <Title dangerouslySetInnerHTML={{ __html: item.title.rendered }} />
         </Link>
 
+        
+
+        {/* If the post has an excerpt (short summary text), we render it */}
+        {item.excerpt && (
+          <Excerpt
+            dangerouslySetInnerHTML={{ __html: item.excerpt.rendered }}
+          />
+        )}
+
         {/* If the post has an author, we render a clickable author text. */}
         {author && (
           <StyledLink link={author.link}>
@@ -44,13 +53,6 @@ const Item = ({ state, item }) => {
           {" "}
           on <b>{date.toDateString()}</b>
         </PublishDate>
-
-        {/* If the post has an excerpt (short summary text), we render it */}
-        {item.excerpt && (
-          <Excerpt
-            dangerouslySetInnerHTML={{ __html: item.excerpt.rendered }}
-          />
-        )}
       </ColumnTwo>
     </StyledArticle>
   );
@@ -61,25 +63,21 @@ export default connect(Item);
 
 const StyledArticle = styled.article`
   padding: 12px;
-  border: 2px solid;
-  border-radius: 25px;
   margin: 0 auto;
-  height: 280px;
-
+  width: 90%;
   @media screen and (max-width: 800px) {
     & {
       width: 100%;
       display: block;
       margin-bottom: 20px;
-      height: 600px
+      height: 200px
     }
   }
 `;
 
 const ColumnOne = styled.div`
   float: left;
-  width: 50%;
-  padding: 0 10px;
+  width: 55%;
 
   @media screen and (max-width: 800px) {
     & {
@@ -95,14 +93,14 @@ const ColumnTwo = styled.div`
   float: right;
   width: 40%;
   height: auto;
-  padding: 0 10px;
+  padding: 0;
 
   @media screen and (max-width: 800px) {
     & {
       width: 100%;
       display: block;
       margin: 0 auto;
-      padding: 0;
+      padding-bottom: 20px;
     }
   }
 `;
@@ -111,7 +109,10 @@ const ColumnTwo = styled.div`
 const Title = styled.h1`
   font-size: 2rem;
   color: rgba(12, 17, 43);
- 
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #dae2ec;
 `;
 
 
@@ -133,4 +134,5 @@ const PublishDate = styled.span`
 const Excerpt = styled.div`
   line-height: 1.6em;
   color: rgba(12, 17, 43, 0.8);
+  border-bottom: 1px solid #dae2ec;
 `;

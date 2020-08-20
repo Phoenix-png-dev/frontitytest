@@ -87,5 +87,10 @@ const Content = styled.div`
   h2 {
     color: #102a42;
     font-size: 3.7rem;
+    
+    @media screen and (max-width: 800px) {
+    & {
+      font-size: 1.5rem;
+    }
   }
 `;

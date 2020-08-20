@@ -7,12 +7,41 @@ import {
   FaTwitterSquare,
   FaInstagramSquare,
 } from "react-icons/fa";
+import Mailchimp from "react-mailchimp-form";
  
 
 const SideContent = () => {
   return (
     <Side>
       <div>
+        <p className="subtitle fancy">
+          <span>Subscribe</span>
+        </p>
+
+        <Mailchimp
+          action="https://gmail.us17.list-manage.com/subscribe/post?u=9b30d52d578714069d2892613&amp;id=6c002e3c91"
+          //Adding multiple fields:
+          fields={[
+            {
+              name: "EMAIL",
+              placeholder: "Email",
+              type: "email",
+              required: true
+            }
+          ]}
+          // Change predetermined language
+          messages={{
+            sending: "Sending...",
+            success: "Thank you for subscribing!",
+            error: "An unexpected internal error has occurred.",
+            empty: "You must write an e-mail.",
+            duplicate: "Too many subscribe attempts for this email address",
+            button: "Subscribe!"
+          }}
+          // Add a personalized class
+          className="SignUp"
+        />
+
         <p className="subtitle fancy">
           <span>Follow Us</span>
         </p>
@@ -41,15 +70,37 @@ export default connect(SideContent);
 const Side = styled.div`
   display: inline-flex;
   float: right;
+  padding-top: 20px;
   width: 20%;
-  baackground-color: white;
+  background-color: white;
   div {
     margin: 0 auto;
     align-items: center;
   }
+
   h3 {
     color: green;
     text-align: center;
+  }
+
+  .SignUp {
+    width: 0;
+    display: inline-block;
+    margin-left: -60px;
+    input {
+      width: 200px;
+      padding: 10px;
+      margin: 2px;
+    }
+    button {
+      margin-top: 2px;
+      margin-left: 2px;
+      padding: 10px;
+      width: 225px;
+    }
+    .msg-alert {
+      width: 225px;
+    }
   }
   
   .fancy {

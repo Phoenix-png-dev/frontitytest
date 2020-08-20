@@ -2,19 +2,19 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.1",
-  "hash": "ebd7ff595bb3b48e7198",
+  "hash": "d93c7556aee302e4329a",
   "publicPath": "/static/",
   "outputPath": "/Users/matthewbert/Desktop/my-app/build/static",
   "assetsByChunkName": {
     "list": "list.module.js",
     "my-app": [
       "my-app.module.js",
-      "my-app.a3f083c902bf92123049.hot-update.js"
+      "my-app.d8167d39aceca8d886c6.hot-update.js"
     ]
   },
   "assets": [
     {
-      "name": "a3f083c902bf92123049.hot-update.json",
+      "name": "d8167d39aceca8d886c6.hot-update.json",
       "size": 48,
       "chunks": [],
       "chunkNames": [],
@@ -34,7 +34,7 @@
     },
     {
       "name": "list.module.js",
-      "size": 80155,
+      "size": 81723,
       "chunks": [
         "list"
       ],
@@ -42,11 +42,11 @@
         "list"
       ],
       "info": {},
-      "emitted": false
+      "emitted": true
     },
     {
-      "name": "my-app.a3f083c902bf92123049.hot-update.js",
-      "size": 15417,
+      "name": "my-app.d8167d39aceca8d886c6.hot-update.js",
+      "size": 12142,
       "chunks": [
         "my-app"
       ],
@@ -61,7 +61,7 @@
     },
     {
       "name": "my-app.module.js",
-      "size": 9422487,
+      "size": 9532633,
       "chunks": [
         "my-app"
       ],
@@ -80,7 +80,7 @@
       ],
       "assets": [
         "my-app.module.js",
-        "my-app.a3f083c902bf92123049.hot-update.js"
+        "my-app.d8167d39aceca8d886c6.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -93,7 +93,7 @@
       ],
       "assets": [
         "my-app.module.js",
-        "my-app.a3f083c902bf92123049.hot-update.js"
+        "my-app.d8167d39aceca8d886c6.hot-update.js"
       ],
       "children": {},
       "childAssets": {}

@@ -34,14 +34,21 @@ const ListMedia = ({ state, id }) => {
 export default connect(ListMedia);
 
 const Container = styled.div`
-  margin-top: 16px;
+  margin: 16px 0;
   height: 350px;
+
+  @media screen and (max-width: 800px) {
+    & {
+      height: auto;
+    }
+  }
 `;
 
 const StyledImage = styled(Image)`
   display: block;
   width: 100%;
-  height: auto;
+  height: 75%;
+  border-radius: 15px;
 
   @media screen and (max-width: 800px) {
     & {

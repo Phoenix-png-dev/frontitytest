@@ -106,14 +106,21 @@ const NavItem = styled.div`
 
 const Icons = styled.nav`
   font-size: 25px;
-  padding: 15px 30px;
-  margin: 0 50px;
+  padding: 20px 0 0 125px;
+  display: flex;
 
   svg {
     padding-right: 10px;
+  }
+  @media screen and (max-width: 1087px) {
+    display: none;
   }
 `;
 
 const Navigation = styled.nav`
   padding-left: 5px;
+
+  @media screen and (max-width: 1087px) {
+    display: none;
+  }
 `;
