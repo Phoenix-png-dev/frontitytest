@@ -31,8 +31,14 @@ const Theme = ({ state }) => {
         <meta name="twitter:site" content="@thementalgeek" />
         <meta name="twitter:creator" content="@mattlearnsjs" />
         <meta name="twitter:title" content="Mental Geek" />
-        <meta name="twitter:description" content="A Mental Health Community for geeks" />
-        <meta name="twitter:image" content="mentalgeek.png" />
+        <meta
+          name="twitter:description"
+          content="A Mental Health Community for geeks"
+        />
+        <meta
+          name="twitter:image"
+          content="https://res.cloudinary.com/dqt94dxh0/image/upload/v1597978015/mentalgeek_orki7i.png"
+        />
         <html lang="en" />
       </Head>
 
@@ -52,7 +58,7 @@ const Theme = ({ state }) => {
         <Switch>
           <Loading when={data.isFetching} />
           <List when={data.isArchive} />
-          <Contact when={data.isPostType && state.router.link == '/contact/'} />
+          <Contact when={data.isPostType && state.router.link == "/contact/"} />
           <Post when={data.isPostType} />
           <PageError when={data.isError} />
         </Switch>

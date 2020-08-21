@@ -18,7 +18,6 @@ const settings = {
             ["About", "/about/"],
             ["Resources", "/resources/"],
             ["Contact", "/contact/"],
-            //["Portfolio", "/portfolio/"],
             ["Home", "/"]
           ],
           category: [
@@ -28,7 +27,8 @@ const settings = {
           featured: {
             showOnList: true,
             showOnPost: true
-          }
+          },
+          autoPrefetch: "hover",
         }
       }
     },
@@ -45,6 +45,7 @@ const settings = {
     },
     "@frontity/tiny-router",
     "@frontity/html2react",
+    "@frontity/head-tags",
     "frontity-contact-form-7"
   ]
 };
