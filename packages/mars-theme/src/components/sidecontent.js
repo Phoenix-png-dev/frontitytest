@@ -97,6 +97,14 @@ const Side = styled.div`
       margin-left: 2px;
       padding: 10px;
       width: 225px;
+      background-color: #3936ba;
+      border-radius: 10px;
+      color: white;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #7572eb;
     }
     .msg-alert {
       width: 225px;

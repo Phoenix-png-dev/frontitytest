@@ -16,7 +16,7 @@ const settings = {
           menu: [
             ["About", "/about/"],
             ["Resources", "/resources/"],
-            ["Connect", "/connect/"],
+            ["Contact", "/contact/"],
             //["Portfolio", "/portfolio/"],
             ["Home", "/"]
           ],
@@ -43,7 +43,8 @@ const settings = {
       }
     },
     "@frontity/tiny-router",
-    "@frontity/html2react"
+    "@frontity/html2react",
+    "frontity-contact-form-7"
   ]
 };
 

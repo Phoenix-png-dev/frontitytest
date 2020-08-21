@@ -9,8 +9,7 @@ import Title from "./title";
 import PageError from "./page-error";
 import SideContent from "./sidecontent"
 import Footer from "./footer";
-import Portfolio from "./portfolio"
-import { FaBeer } from "react-icons/fa";
+import Contact from "./contact"
 
 
 
@@ -47,7 +46,7 @@ const Theme = ({ state }) => {
         <Switch>
           <Loading when={data.isFetching} />
           <List when={data.isArchive} />
-          {/*<Portfolio when={data.isPostType && state.router.link == '/portfolio/'} />*/}
+          <Contact when={data.isPostType && state.router.link == '/contact/'} />
           <Post when={data.isPostType} />
           <PageError when={data.isError} />
         </Switch>
@@ -74,6 +73,11 @@ const globalStyles = css`
   a:visited {
     color: inherit;
     text-decoration: none;
+  }
+  svg {
+    color: #3936ba;
+      cursor: pointer;
+    }
   }
 `;
 

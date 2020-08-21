@@ -22,17 +22,17 @@ const Item = ({ state, item }) => {
        * list of featured posts, we render the media.
        */}
       <ColumnOne>
-        {state.theme.featured.showOnList && (
-          <ListImage id={item.featured_media} />
-        )}
+        <Link link={item.link}>
+          {state.theme.featured.showOnList && (
+            <ListImage id={item.featured_media} />
+          )}
+        </Link>
       </ColumnOne>
 
       <ColumnTwo>
         <Link link={item.link}>
           <Title dangerouslySetInnerHTML={{ __html: item.title.rendered }} />
         </Link>
-
-        
 
         {/* If the post has an excerpt (short summary text), we render it */}
         {item.excerpt && (
@@ -135,4 +135,5 @@ const Excerpt = styled.div`
   line-height: 1.6em;
   color: rgba(12, 17, 43, 0.8);
   border-bottom: 1px solid #dae2ec;
+  margin-bottom: 10px;
 `;
