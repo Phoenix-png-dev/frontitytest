@@ -2,9 +2,10 @@ const settings = {
   name: "my-app",
   state: {
     frontity: {
-      url: "http://mental-geek.local/",
+      url: "https://mentalgeek.net/",
       title: "Mental Geek",
-      description: "A Mental Health Community"
+      description: "A Mental Health Community",
+      image: "mentalgeek.png"
     }
   },
 

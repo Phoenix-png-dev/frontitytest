@@ -27,6 +27,12 @@ const Theme = ({ state }) => {
       <Title />
       <Head>
         <meta name="description" content={state.frontity.description} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@thementalgeek" />
+        <meta name="twitter:creator" content="@mattlearnsjs" />
+        <meta name="twitter:title" content="Mental Geek" />
+        <meta name="twitter:description" content="A Mental Health Community for geeks" />
+        <meta name="twitter:image" content="mentalgeek.png" />
         <html lang="en" />
       </Head>
 

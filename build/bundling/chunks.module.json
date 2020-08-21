@@ -2,28 +2,14 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.1",
-  "hash": "6bc03c59cf206df4f241",
+  "hash": "e7c50d2c94c48c41b0cd",
   "publicPath": "/static/",
   "outputPath": "/Users/matthewbert/Desktop/my-app/build/static",
   "assetsByChunkName": {
     "list": "list.module.js",
-    "my-app": [
-      "my-app.module.js",
-      "my-app.65709321263739472bb9.hot-update.js"
-    ]
+    "my-app": "my-app.module.js"
   },
   "assets": [
-    {
-      "name": "65709321263739472bb9.hot-update.json",
-      "size": 48,
-      "chunks": [],
-      "chunkNames": [],
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true
-      },
-      "emitted": false
-    },
     {
       "name": "images/logo.svg",
       "size": 42357,
@@ -42,21 +28,6 @@
         "list"
       ],
       "info": {},
-      "emitted": false
-    },
-    {
-      "name": "my-app.65709321263739472bb9.hot-update.js",
-      "size": 66010,
-      "chunks": [
-        "my-app"
-      ],
-      "chunkNames": [
-        "my-app"
-      ],
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true
-      },
       "emitted": false
     },
     {
@@ -79,8 +50,7 @@
         "my-app"
       ],
       "assets": [
-        "my-app.module.js",
-        "my-app.65709321263739472bb9.hot-update.js"
+        "my-app.module.js"
       ],
       "children": {},
       "childAssets": {}
@@ -92,8 +62,7 @@
         "my-app"
       ],
       "assets": [
-        "my-app.module.js",
-        "my-app.65709321263739472bb9.hot-update.js"
+        "my-app.module.js"
       ],
       "children": {},
       "childAssets": {}
