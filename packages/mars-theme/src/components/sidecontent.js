@@ -5,10 +5,9 @@ import Categories from "./categories";
 import {
   FaFacebookSquare,
   FaTwitterSquare,
-  FaInstagramSquare,
+  FaInstagramSquare
 } from "react-icons/fa";
 import Mailchimp from "react-mailchimp-form";
- 
 
 const SideContent = () => {
   return (
@@ -93,7 +92,7 @@ const Side = styled.div`
       margin: 2px;
     }
     button {
-      margin-top: 2px;
+      margin-top: 5px;
       margin-left: 2px;
       padding: 10px;
       width: 225px;

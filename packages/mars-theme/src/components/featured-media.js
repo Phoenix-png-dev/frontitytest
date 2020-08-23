@@ -36,6 +36,12 @@ export default connect(FeaturedMedia);
 const Container = styled.div`
   margin-top: 16px;
   height: 350px;
+
+  @media screen and (max-width: 800px) {
+    & {
+      height: auto;
+    }
+  }
 `;
 
 const StyledImage = styled(Image)`

@@ -2,9 +2,9 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.1",
-  "hash": "e7c50d2c94c48c41b0cd",
+  "hash": "f2373f878961685c4a42",
   "publicPath": "/static/",
-  "outputPath": "/Users/matthewbert/Desktop/my-app/build/static",
+  "outputPath": "/Users/matthewbert/Desktop/2020 web dev/my-app/build/static",
   "assetsByChunkName": {
     "list": "list.module.js",
     "my-app": "my-app.module.js"
@@ -20,7 +20,7 @@
     },
     {
       "name": "list.module.js",
-      "size": 82737,
+      "size": 83205,
       "chunks": [
         "list"
       ],
@@ -32,7 +32,7 @@
     },
     {
       "name": "my-app.module.js",
-      "size": 9641498,
+      "size": 9403122,
       "chunks": [
         "my-app"
       ],

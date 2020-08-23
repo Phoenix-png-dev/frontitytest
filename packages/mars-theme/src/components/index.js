@@ -7,11 +7,9 @@ import Post from "./post";
 import Loading from "./loading";
 import Title from "./title";
 import PageError from "./page-error";
-import SideContent from "./sidecontent"
+import SideContent from "./sidecontent";
 import Footer from "./footer";
-import Contact from "./contact"
-
-
+import Contact from "./contact";
 
 /**
  * Theme is the root React component of our theme. The one we will export
@@ -106,8 +104,8 @@ const Main = styled.div`
   float: left;
   width: 75%;
   @media only screen and (max-width: 1090px) {
-      & {
-        width: 100%;
+    & {
+      width: 100%;
     }
   }
 `;
@@ -115,15 +113,13 @@ const Main = styled.div`
 const SideBar = styled.div`
   display: inline-block;
   justify-content: center;
-  
+
   @media only screen and (max-width: 1090px) {
-      & {
-        width: 100%;
+    & {
+      width: 100%;
     }
   }
 `;
-
-
 
 const FootArea = styled.div`
   height: 8rem;
@@ -133,6 +129,4 @@ const FootArea = styled.div`
   place-items: center;
   justify-content: center;
   width: 100%;
-`
-
-
+`;

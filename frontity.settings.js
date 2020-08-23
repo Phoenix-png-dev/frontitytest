@@ -28,7 +28,7 @@ const settings = {
             showOnList: true,
             showOnPost: true
           },
-          autoPrefetch: "hover",
+          autoPrefetch: "hover"
         }
       }
     },
@@ -40,6 +40,14 @@ const settings = {
             "https://mentalgeek-60854f.ingress-comporellon.easywp.com/wp-json",
           homepage: "/",
           postsPage: "/"
+        }
+      }
+    },
+    {
+      name: "@frontity/google-analytics",
+      state: {
+        googleAnalytics: {
+          trackingId: "UA-176093499-1"
         }
       }
     },
