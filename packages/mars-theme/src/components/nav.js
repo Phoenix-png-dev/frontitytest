@@ -1,10 +1,10 @@
 import React from "react";
 import { connect, styled } from "frontity";
-import Link from "./link";
+import Link from "@frontity/components/link";
 import {
   FaFacebookSquare,
   FaTwitterSquare,
-  FaInstagramSquare,
+  FaInstagramSquare
 } from "react-icons/fa";
 
 /**
@@ -32,9 +32,15 @@ const Nav = ({ state }) => (
       );
     })}
     <Icons>
-      <a href="https://www.facebook.com/mentalgeek/"><FaFacebookSquare color="#4267b2" /></a>
-      <a href="https://twitter.com/thementalgeek"><FaTwitterSquare color="#34a1f2" /></a>
-      <a href="https://www.instagram.com/mental_geek/"><FaInstagramSquare color="#ea4d89" /></a>
+      <a href="https://www.facebook.com/mentalgeek/">
+        <FaFacebookSquare color="#4267b2" />
+      </a>
+      <a href="https://twitter.com/thementalgeek">
+        <FaTwitterSquare color="#34a1f2" />
+      </a>
+      <a href="https://www.instagram.com/mental_geek/">
+        <FaInstagramSquare color="#ea4d89" />
+      </a>
     </Icons>
   </NavContainer>
 );
@@ -56,8 +62,6 @@ const NavContainer = styled.nav`
   }
 `;
 
-
-
 const StyledLink = styled(Link)`
   text-decoration: none;
   font-weight: bold;
@@ -74,7 +78,7 @@ const NavItem = styled.div`
   margin: 0 16px;
   color: #3d4f7a;
   font-size: 1.4em;
-  
+
   box-sizing: border-box;
   flex-shrink: 0;
 

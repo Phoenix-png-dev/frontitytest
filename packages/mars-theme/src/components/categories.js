@@ -1,6 +1,6 @@
 import React from "react";
 import { connect, styled } from "frontity";
-import Link from "./link";
+import Link from "@frontity/components/link";
 
 /**
  * Navigation Component
@@ -8,20 +8,20 @@ import Link from "./link";
  * It renders the navigation links
  */
 const Categories = ({ state }) => (
-    <NavContainer>
-        {state.theme.category.map(([name, link]) => {
-            // Check if the link matched the current page url
-            const isCurrentPage = state.router.link === link;
-            return (
-                <NavItem key={name}>
-                    {/* If link url is the current page, add `aria-current` for a11y */}
-                    <Link link={link} aria-current={isCurrentPage ? "page" : undefined}>
-                        {name}
-                    </Link>
-                </NavItem>
-            );
-        })}
-    </NavContainer>
+  <NavContainer>
+    {state.theme.category.map(([name, link]) => {
+      // Check if the link matched the current page url
+      const isCurrentPage = state.router.link === link;
+      return (
+        <NavItem key={name}>
+          {/* If link url is the current page, add `aria-current` for a11y */}
+          <Link link={link} aria-current={isCurrentPage ? "page" : undefined}>
+            {name}
+          </Link>
+        </NavItem>
+      );
+    })}
+  </NavContainer>
 );
 
 export default connect(Categories);
@@ -31,7 +31,7 @@ const NavContainer = styled.nav`
   width: 50%;
   max-width: 50%;
   box-sizing: border-box;
-  
+
   margin: 0;
   align-items: center;
 `;
