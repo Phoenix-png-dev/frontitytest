@@ -1,29 +1,28 @@
 import React from "react";
 import { connect, styled } from "frontity";
 import Link from "./link";
-import {
-    FaFacebookSquare,
-    FaTwitterSquare,
-    FaInstagramSquare,
-} from "react-icons/fa";
+import { FaDiscord, FaTwitterSquare, FaInstagramSquare } from "react-icons/fa";
 
 const Footer = () => {
-    return (
-        <Foot>
-                <Icons>
-                    <a href="https://www.facebook.com/mentalgeek/"><FaFacebookSquare color="#4267b2" /></a>
-                    <a href="https://twitter.com/thementalgeek"><FaTwitterSquare color="#34a1f2" /></a>
-                    <a href="https://www.instagram.com/mental_geek/"><FaInstagramSquare color="#ea4d89" /></a>
-                </Icons>
-                <p>
-                    &copy;{new Date().getFullYear()} Mental Geek || All Rights Reserved
-        </p>
-        
-        </Foot>
-    );
+  return (
+    <Foot>
+      <Icons>
+        <a href="https://discord.gg/pz8NdeS">
+          <FaDiscord color="#2a5ee7" />
+        </a>
+        <a href="https://twitter.com/thementalgeek">
+          <FaTwitterSquare color="#34a1f2" />
+        </a>
+        <a href="https://www.instagram.com/mental_geek/">
+          <FaInstagramSquare color="#ea4d89" />
+        </a>
+      </Icons>
+      <p>&copy;{new Date().getFullYear()} Mental Geek || All Rights Reserved</p>
+    </Foot>
+  );
 };
 
-export default connect(Footer); 
+export default connect(Footer);
 
 const Foot = styled.div`
   height: 8rem;
@@ -36,13 +35,12 @@ const Foot = styled.div`
   width: 100%;
 
   p {
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: var(--spacing);
-  font-size: 20px;
-}
-
-  `;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: var(--spacing);
+    font-size: 20px;
+  }
+`;
 
 const Icons = styled.div`
   font-size: 30px;

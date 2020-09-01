@@ -2,11 +2,7 @@ import React from "react";
 import { connect, styled } from "frontity";
 import Link from "./link";
 import Categories from "./categories";
-import {
-  FaFacebookSquare,
-  FaTwitterSquare,
-  FaInstagramSquare
-} from "react-icons/fa";
+import { FaDiscord, FaTwitterSquare, FaInstagramSquare } from "react-icons/fa";
 import Mailchimp from "react-mailchimp-form";
 
 const SideContent = () => {
@@ -45,8 +41,8 @@ const SideContent = () => {
           <span>Follow Us</span>
         </p>
         <Icons>
-          <a href="https://www.facebook.com/mentalgeek/">
-            <FaFacebookSquare color="#4267b2" />
+          <a href="https://discord.gg/pz8NdeS">
+            <FaDiscord color="#2a5ee7" />
           </a>
           <a href="https://twitter.com/thementalgeek">
             <FaTwitterSquare color="#34a1f2" />

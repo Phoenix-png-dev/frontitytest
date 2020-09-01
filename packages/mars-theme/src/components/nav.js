@@ -1,11 +1,7 @@
 import React from "react";
 import { connect, styled } from "frontity";
 import Link from "@frontity/components/link";
-import {
-  FaFacebookSquare,
-  FaTwitterSquare,
-  FaInstagramSquare
-} from "react-icons/fa";
+import { FaDiscord, FaTwitterSquare, FaInstagramSquare } from "react-icons/fa";
 
 /**
  * Navigation Component
@@ -32,8 +28,8 @@ const Nav = ({ state }) => (
       );
     })}
     <Icons>
-      <a href="https://www.facebook.com/mentalgeek/">
-        <FaFacebookSquare color="#4267b2" />
+      <a href="https://discord.gg/pz8NdeS">
+        <FaDiscord color="#2a5ee7" />
       </a>
       <a href="https://twitter.com/thementalgeek">
         <FaTwitterSquare color="#34a1f2" />

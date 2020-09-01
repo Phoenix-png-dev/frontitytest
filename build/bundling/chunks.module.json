@@ -2,19 +2,19 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.1",
-  "hash": "45c4af85fec2f657e1aa",
+  "hash": "7c1d9289ca41a8b48c6f",
   "publicPath": "/static/",
   "outputPath": "/Users/matthewbert/Desktop/2020 web dev/my-app/build/static",
   "assetsByChunkName": {
     "list": "list.module.js",
     "my-app": [
       "my-app.module.js",
-      "my-app.e01da1cc83741e88db33.hot-update.js"
+      "my-app.b3a163df7a452c5866d3.hot-update.js"
     ]
   },
   "assets": [
     {
-      "name": "e01da1cc83741e88db33.hot-update.json",
+      "name": "b3a163df7a452c5866d3.hot-update.json",
       "size": 48,
       "chunks": [],
       "chunkNames": [],
@@ -45,8 +45,8 @@
       "emitted": false
     },
     {
-      "name": "my-app.e01da1cc83741e88db33.hot-update.js",
-      "size": 11965,
+      "name": "my-app.b3a163df7a452c5866d3.hot-update.js",
+      "size": 10832,
       "chunks": [
         "my-app"
       ],
@@ -61,7 +61,7 @@
     },
     {
       "name": "my-app.module.js",
-      "size": 9429406,
+      "size": 9428547,
       "chunks": [
         "my-app"
       ],
@@ -80,7 +80,7 @@
       ],
       "assets": [
         "my-app.module.js",
-        "my-app.e01da1cc83741e88db33.hot-update.js"
+        "my-app.b3a163df7a452c5866d3.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -93,7 +93,7 @@
       ],
       "assets": [
         "my-app.module.js",
-        "my-app.e01da1cc83741e88db33.hot-update.js"
+        "my-app.b3a163df7a452c5866d3.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
