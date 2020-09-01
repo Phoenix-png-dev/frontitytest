@@ -35,7 +35,7 @@ const Theme = ({ state }) => {
         />
         <meta
           name="twitter:image"
-          content="https://res.cloudinary.com/dqt94dxh0/image/upload/v1597978015/mentalgeek_orki7i.png"
+          content="https://mentalgeek-60854f.ingress-comporellon.easywp.com/wp-content/uploads/2020/09/Screen-Shot-2020-09-01-at-5.20.36-PM.png"
         />
         <html lang="en" />
       </Head>
